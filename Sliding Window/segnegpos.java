@@ -28,31 +28,31 @@ public class segnegpos {
     }
 
     //seg negative positive
-    // public static int[] seg(int[] arr)
-    // {
-    //     int itr = 0,ptr=-1;
-    //     while(itr<arr.length)
-    //     {
-    //         if(arr[itr] < 0)
-    //         {
-                
-    //             swap(arr,++ptr,itr);
-    //         }
-    //         itr++;
-    //     }
-
-        public static int[] seg(int[] arr)
+    public static int[] seg(int[] arr)
+    {
+        int itr = 0,ptr=-1;
+        while(itr<arr.length)
         {
-            int itr = 0,ptr=-1;
-            while(itr<arr.length)
+            if(arr[itr] < 0)
             {
-                if(arr[itr] == 0)
-                {
-                    
-                    swap(arr,++ptr,itr);
-                }
-                itr++;
+                
+                swap(arr,++ptr,itr);
             }
+            itr++;
+        }
+
+    //     public static int[] seg(int[] arr)
+    //     {
+    //         int itr = 0,ptr=-1;
+    //         while(itr<arr.length)
+    //         {
+    //             if(arr[itr] == 0)
+    //             {
+                    
+    //                 swap(arr,++ptr,itr);
+    //             }
+    //             itr++;
+    //         }
         return arr;
     }
 }

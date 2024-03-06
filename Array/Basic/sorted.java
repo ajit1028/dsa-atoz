@@ -18,7 +18,7 @@ public class sorted {
         {
             if(arr[1] > arr[0]){
                if(arr[i] > arr[i-1])
-               count++ ;
+                 count++ ;
                else
                break;
             }
